@@ -1,0 +1,99 @@
+/* Enable smooth scrolling for navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Optional: stagger animation for sibling elements (premium effect) */
+.reveal:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.reveal:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.reveal:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.reveal:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* nav bar  */
+nav {
+    opacity: 0.7;
+}
+
+/* msg  */
+.msg { 
+    color: black;
+  margin-top: 200px;
+  padding: 10px;
+  text-align: center;
+  font-size: 90px;
+}
+
+.msg2 {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.msg3 {
+  font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+  margin-top: 400px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.pics {
+  width: 550px;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.video {
+  height: 500px;
+  width: 100%;
+}
+
+.lastt {
+  color: black;
+  margin-top: 200px;
+  padding: 10px;
+  text-align: center;
+  font-size: 90px;
+}
+
